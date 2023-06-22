@@ -6,7 +6,7 @@ import ContTitle from "../layout/ContTitle";
 import MovieSearch from "../movie/MovieSearch";
 import MovieSlider from "../movie/MovieSlider";
 import MovieCont from "../movie/MovieCont";
-import MovieTeg from "../movie/MovieTeg";
+import MovieTag from "../movie/MovieTag";
 
 const MoviePage = (query) => {
   const [movies, setMovies] = useState([]);
@@ -19,6 +19,15 @@ const MoviePage = (query) => {
       .then((result) => setMovies(result.results))
       .catch((error) => console.log(error));
   };
+
+  const tags = async (query) => {
+    await fetch(
+      `${query}?api_key=6b6c09dc96064ff256d6877434f62094&language=ko-KR`,
+    )
+      .then(response => response.json())
+      .then(result => setMovies(result.results))
+      .catch(error => console.log(error));
+  }
 
   useEffect(() => {
     fetch(
@@ -34,7 +43,7 @@ const MoviePage = (query) => {
       <ContTitle title="movie" />
       <MovieSlider movies={movies} />
       <MovieSearch onSearch={search} />
-      <MovieTeg />
+      <MovieTag onSearch={tags}/>
       <MovieCont movies={movies} />
     </Contents>
   );

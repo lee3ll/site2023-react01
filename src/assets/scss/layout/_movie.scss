@@ -76,6 +76,7 @@
 //Movie__search
 .movie__search {
   text-align: center;
+  margin-top: 100px;
   margin-bottom: 50px;
   input {
     border: 1px solid #e8ecf2;
@@ -86,7 +87,37 @@
     margin-right: 10px;
   }
   button {
-    @include button(#4853ec, #fff);
+    @include button(#32c3dd, #fff);
     border-radius: 50px;
+  }
+}
+
+//movie__tag
+.movie__tag {
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    li {
+      a {
+        display: inline-block;
+        border: 1px solid #32c3dd;
+        padding: 5px 20px;
+        margin: 0 10px;
+        color: #32c3dd;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #32c3dd;
+          color: #fff;
+        }
+      }
+    }
+    li.active a {
+      background-color: #32c3dd;
+      color: #fff;
+    }
   }
 }

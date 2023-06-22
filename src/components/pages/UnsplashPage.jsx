@@ -4,7 +4,7 @@ import ContTitle from "../layout/ContTitle";
 
 import UnsplashSlider from "../unsplash/UnsplashSlider";
 import UnsplashSearch from "../unsplash/UnsplashSearch";
-import UnsplashTeg from "../unsplash/UnsplashTeg";
+import UnsplashTag from "../unsplash/UnsplashTag";
 import UnsplashCont from "../unsplash/UnsplashCont";
 
 const UnsplashPage = () => {
@@ -39,7 +39,7 @@ const UnsplashPage = () => {
       <ContTitle title="unsplash" />
       <UnsplashSlider />
       <UnsplashSearch onSearch={search} />
-      <UnsplashTeg />
+      <UnsplashTag onSearch={search}/>
       <UnsplashCont images={images} />
     </Contents>
   );

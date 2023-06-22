@@ -13,10 +13,10 @@ const Header = (props) => {
         <nav className="header__nav" role="navigation">
           <ul>
             <li>
-              <Link to="/member">멤버 소개</Link>
+              <Link to="/member">소개</Link>
             </li>
             <li>
-              <Link to="/port">포트폴리오</Link>
+              <Link to="/port">작품소개</Link>
             </li>
             <li>
               <Link to="/youtube">유튜브</Link>

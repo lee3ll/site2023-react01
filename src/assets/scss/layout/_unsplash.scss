@@ -61,7 +61,30 @@
     margin-right: 10px;
   }
   button {
-    @include button(#4853ec, #fff);
+    @include button(#32c3dd, #fff);
     border-radius: 50px;
+  }
+}
+
+.unsplash__tag {
+  div {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    button {
+      border: 1px solid #32c3dd;
+      padding: 5px 20px;
+      margin: 0 10px;
+      color: #32c3dd;
+      background-color: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #32c3dd;
+        color: #fff;
+      }
+    }
   }
 }
