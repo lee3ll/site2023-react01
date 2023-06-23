@@ -7,7 +7,7 @@ const PortPage = () => {
   return (
     <Contents>
       <ContTitle title="Portfolio" />
-      <PortCont title="PortCont" />
+      <PortCont attr="port__wrap gmarket5 section center" />
     </Contents>
   );
 };

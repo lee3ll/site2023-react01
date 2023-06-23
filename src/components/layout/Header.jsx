@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
-    <div id="header" className={props.attr} role="heading" aria-label="1">
+    <div id="header" className={props.attr} aria-label="1">
       <div className="header__inner container">
         <h1 className="header__logo">
           <Link to="/">
@@ -13,7 +13,7 @@ const Header = (props) => {
         <nav className="header__nav" role="navigation">
           <ul>
             <li>
-              <Link to="/member">소개</Link>
+              <Link to="/intro">소개</Link>
             </li>
             <li>
               <Link to="/port">작품소개</Link>

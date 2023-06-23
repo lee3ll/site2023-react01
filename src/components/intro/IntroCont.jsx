@@ -2,10 +2,10 @@ import React from "react";
 
 const Intro = (props) => {
   return (
-    <section id="introSection" class={props.attr}>
-      <h3 class="blind">프론트앤드 커리큘럼 과정 소개</h3>
-      <div class="intro__inner container">
-        <div class="intro__title">
+    <section id="introSection" className={props.attr}>
+      <h3 className="blind">프론트앤드 커리큘럼 과정 소개</h3>
+      <div className="intro__inner container">
+        <div className="intro__title">
           <span>frontend</span>
           <h3>
             지브리
@@ -18,9 +18,9 @@ const Intro = (props) => {
             주요 사업으로 하는 일본의 기업이다.
           </p>
         </div>
-        <div class="intro__desc">
+        <div className="intro__desc">
           <div>
-            <h4 class="icon-bg2">역사</h4>
+            <h4 className="icon-bg2">역사</h4>
             <p>
               '바람계곡의 나우시카'를 제작한 애니메이션 제작 회사인 '톱
               크래프트'를 모체로, 타카하타 이사오와 미야자키 하야오의 애니메이션
@@ -35,7 +35,7 @@ const Intro = (props) => {
             </p>
           </div>
           <div>
-            <h4 class="icon-bg3">창립자</h4>
+            <h4 className="icon-bg3">창립자</h4>
             <p>
               스튜디오 지브리는 1985년 미야자키 하야오에 의해 설립되었다. 그는
               1941년 도쿄도 분쿄구 아케노보초에서 태어났다. 이후 1978년 '미래
@@ -50,7 +50,7 @@ const Intro = (props) => {
             </p>
           </div>
           <div>
-            <h4 class="icon-bg1">명칭</h4>
+            <h4 className="icon-bg1">명칭</h4>
             <p>
               '스튜디오 지브리'의 명칭은 사하라 사막에 부는 열풍을 뜻하는
               리비아어 'ghibli'에서 유래하였으며, 제2차 세계 대전 중 이탈리아의
@@ -61,7 +61,7 @@ const Intro = (props) => {
             </p>
           </div>
           <div>
-            <h4 class="icon-bg4">제작팀 해산</h4>
+            <h4 className="icon-bg4">제작팀 해산</h4>
             <p>
               {" "}
               2014년 8월 지브리 주주총회에서 제작팀 해산을 발표했다. 미야자키
